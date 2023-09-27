@@ -28,18 +28,14 @@ import com.example.compose.rally.ui.accounts.SingleAccountScreen
 import com.example.compose.rally.ui.bills.BillsScreen
 import com.example.compose.rally.ui.overview.OverviewScreen
 
-/**
- * Contract for information needed on every Rally navigation destination
- */
+
 interface RallyDestination {
     val icon: ImageVector
     val route: String
     val screen: @Composable () -> Unit
 }
 
-/**
- * Rally app navigation destinations
- */
+
 object Overview : RallyDestination {
     override val icon = Icons.Filled.PieChart
     override val route = "overview"
